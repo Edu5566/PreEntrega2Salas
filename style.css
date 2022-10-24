@@ -6,7 +6,7 @@
 body{
     background-color:rgba(169, 233, 237, 1) ;
 }
-main{
+header{
     grid-area: header;
     background-color:rgba(169, 233, 237, 1) ;
     padding: 0px;
@@ -23,7 +23,7 @@ main{
     padding-right: 150px;
     padding-left: 150px;
 }
-header{
+nav{
     grid-area: nav;
     background-color: rgba(79, 245, 176, 0.548);
     width: 100%;
