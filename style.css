@@ -6,6 +6,7 @@
 body{
     background-color:rgba(169, 233, 237, 1) ;
     min-height: 100vh;
+     border: 1px solid red; 
 }
 /*---------------------------header------------------------------*/
 header{
@@ -285,9 +286,24 @@ footer{
         grid-template-columns: 6fr 2fr;
         grid-template-rows: 1fr 0.5fr 4fr 1fr;
 }
+#plantillageneral{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        " header header" 
+        " nav nav" 
+        " section . "  
+        " footer  footer"; 
+        grid-template-columns: 6fr 2fr;
+        grid-template-rows: 1fr 0.5fr 4fr 1fr;
+}
 /*----------- resposive--------------- */
 @media screen and (max-width:768px){
-    
+    body{
+        background-color:rgba(169, 233, 237, 1) ;
+       height: 100%;
+        border: 1px solid rgb(47, 0, 255); 
+    }
     header{
         grid-area: header;
         background-color:rgba(169, 233, 237, 1) ;
@@ -321,14 +337,15 @@ footer{
         margin-left: 100px;
         margin-top: 100px;
     }
-     aside{
+    aside{
         grid-area: aside;
         background-color:rgba(169, 233, 237, 1) ;
         justify-items: center;
         display: flex;
         justify-content: space-between; 
         margin-left: 50px;
-    }.icondes{
+    }
+    .icondes{
         width: 120px;
         height: 120px;
         margin-left: 90px;
@@ -385,9 +402,20 @@ footer{
             ; 
             grid-template-columns: 4fr;
             grid-template-rows: 2fr 2fr 5fr 1fr 1fr;
-      
     }
-}  
+    #plantillageneral{
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+            "header" 
+            "nav"
+            "section" 
+            "footer"
+            ; 
+            grid-template-columns: 4fr;
+            grid-template-rows: 2fr 2fr 5fr 1fr;
+    }
+}   
 /*------------------------formulario------------------------*/
 .formulario{ 
     background-color:rgb(232, 232, 240);
@@ -402,24 +430,10 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
-/*---------------galeria------------------------*/
+/*---------------galeria------------------------
 #sectiongaleria{
-background-color: rgb(77, 73, 73);
 }
-/*--------------------login-------------------*/
+/*--------------------login-------------------/
 .container{
-    background-color:rgba(92, 86, 85, 0.521) ;
 
-
-}
-#plantillageneral{
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-        " header header" 
-        " nav nav" 
-        " section section"  
-        " footer  footer"; 
-        grid-template-columns: 6fr 2fr;
-        grid-template-rows: 1fr 0.5fr 4fr 1fr;
-}
+} */
