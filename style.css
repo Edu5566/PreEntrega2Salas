@@ -6,7 +6,6 @@
 body{
     background-color:rgba(169, 233, 237, 1) ;
     min-height: 100vh;
-     border: 1px solid red; 
 }
 /*---------------------------header------------------------------*/
 header{
@@ -302,7 +301,6 @@ footer{
     body{
         background-color:rgba(169, 233, 237, 1) ;
        height: 100%;
-        border: 1px solid rgb(47, 0, 255); 
     }
     header{
         grid-area: header;
